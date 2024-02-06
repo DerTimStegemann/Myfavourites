@@ -6,11 +6,11 @@
 
 @font-face {
   font-family: Workbench;
-  src: url(/fonts/static/Workbench-Regular.ttf);
+  src: url(./fonts/static/Workbench-Regular.ttf);
 }
 
 @font-face {
-  src: url(/fonts/ProtestRevolution-Regular.ttf);
+  src: url(./fonts/ProtestRevolution-Regular.ttf);
   font-family: ProtestRevolution;
 }
 
@@ -127,4 +127,16 @@ p + .fas {
 }
 .fa-cart-shopping {
   color: #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  section {
+    padding-top: 25rem;
+  }
 }

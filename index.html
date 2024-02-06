@@ -8,19 +8,6 @@
       src="https://kit.fontawesome.com/a09c93a830.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      if (!localStorage.getItem("visited")) {
-        var confirmation = confirm(
-          "Diese seite enthält Jugendschutz relevante Inhalte. Bist du über 18?"
-        );
-        if (confirmation) {
-          document.getElementById("content").style.display = "block";
-        }
-        localStorage.setItem("visited", "true");
-      } else {
-        document.getElementById("content").style.display = "block";
-      }
-    </script>
     <title>My Favourite's</title>
   </head>
   <body>
@@ -118,7 +105,7 @@
           >
         </div>
         <div class="card">
-          <img src="./Images/akira.jpg" alt="Akira" />
+          <img src="./Images/Akira.jpg" alt="Akira" />
           <h3>Akira</h3>
           <p>
             In einer postapokalyptischen Welt wird der Teenager Tetsuo von einer
