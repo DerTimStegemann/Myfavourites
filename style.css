@@ -118,15 +118,13 @@ main {
   justify-content: center;
 }
 
-.fas {
+p + .fas {
   display: flex;
   justify-content: space-between;
-
-  .fa-youtube {
-    color: red;
-  }
-
-  .fa-cart-shopping {
-    color: #f2f2f2;
-  }
+}
+.fa-youtube {
+  color: red;
+}
+.fa-cart-shopping {
+  color: #f2f2f2;
 }
