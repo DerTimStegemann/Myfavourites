@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Workbench;
+  src: url(/fonts/static/Workbench-Regular.ttf);
+}
+
+@font-face {
+  src: url(/fonts/ProtestRevolution-Regular.ttf);
+  font-family: ProtestRevolution;
+}
+
+section {
+  padding-top: 8rem;
+  text-align: center;
+  font-family: ProtestRevolution;
+  line-height: 2rem;
+}
+
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+
+header {
+  padding: 1.5rem;
+  background-color: #b3aeae;
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.448) inset;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+
+  .fa-gamepad,
+  .fa-film {
+    color: #000000;
+    font-size: 3rem;
+  }
+
+  li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    font-family: Workbench;
+    text-shadow: 1px 0px 0px #372626;
+  }
+
+  li a:hover {
+    color: #f2f2f2;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  height: 38rem;
+  text-align: center;
+  margin: 20px;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.2);
+
+  h3 {
+    margin-top: 0.3rem;
+  }
+  button a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  img {
+    width: 100%;
+    height: 70%;
+  }
+  p,
+  a {
+    padding: 0.5rem;
+  }
+}
+
+.filme,
+.serien,
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  height: 100vh;
+  color: white;
+  background-color: black;
+  border: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+button:hover {
+  background-color: #f2f2f2;
+  color: black;
+  opacity: 0.3;
+}
+
+main {
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+}
+
+.fas {
+  display: flex;
+  justify-content: space-between;
+
+  .fa-youtube {
+    color: red;
+  }
+
+  .fa-cart-shopping {
+    color: #f2f2f2;
+  }
+}
