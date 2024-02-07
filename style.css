@@ -191,17 +191,18 @@ footer {
     position: relative;
   }
 
+  ul li a {
+    font-size: 1.5rem;
+  }
+
   footer {
     position: relative;
   }
 
-  main {
-    padding-left: 3rem;
-  }
-
   main,
-  section {
-    margin: 0 10%;
+  section,
+  .wip {
+    margin: 0 5% 0 7%;
   }
   button {
     display: inherit;
