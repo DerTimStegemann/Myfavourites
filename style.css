@@ -24,6 +24,7 @@ section {
 body {
   background-color: black;
   color: whitesmoke;
+  height: 100vh;
 }
 
 header {
@@ -60,6 +61,13 @@ ul {
   }
 }
 
+.top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -69,13 +77,18 @@ ul {
   margin: 20px;
   justify-content: space-between;
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
 
   h3 {
     margin-top: 0.3rem;
   }
-  button a {
+  a {
     text-decoration: none;
     color: whitesmoke;
+  }
+
+  a:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
   }
 
   img {
@@ -94,6 +107,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  min-height: 100vh;
 }
 
 button {
@@ -104,6 +118,7 @@ button {
   position: fixed;
   left: 0;
   top: 0;
+  display: none;
 }
 
 button:hover {
@@ -129,6 +144,33 @@ p + .fas {
   color: #f2f2f2;
 }
 
+.wip p {
+  padding-top: 8rem;
+  text-align: center;
+  font-family: ProtestRevolution;
+  line-height: 10rem;
+  font-size: 3rem;
+}
+.wip h1 {
+  font-size: 4rem;
+}
+
+.wip {
+  height: 100vh;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #b3aeae;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  font-family: Workbench;
+  box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.448) inset;
+}
+
 @media (max-width: 768px) {
   ul {
     flex-direction: column;
@@ -147,5 +189,21 @@ p + .fas {
 
   header {
     position: relative;
+  }
+
+  footer {
+    position: relative;
+  }
+
+  main {
+    padding-left: 3rem;
+  }
+
+  main,
+  section {
+    margin: 0 10%;
+  }
+  button {
+    display: inherit;
   }
 }
